@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations</title>
+</head>
+
+<style>
+
+      /* Services Section */
+.services {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.services h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+.services__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.services__card {
+  margin: 10px;
+  height: 500px;
+  width: 400px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  transition: 0.3s ease-in;
+}
+
+.services__card:nth-child(2) {
+  background: #1fa2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #a6ffcb,
+    #12d8fa,
+    #1fa2ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.services__card:nth-child(3) {
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+}
+
+.services__card h2 {
+  text-align: center ;
+  vertical-align: top;
+}
+
+.services__card p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+.services__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.services__card button {
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #131313;
+  font-size: 1rem;
+}
+
+.services__card button:hover {
+  cursor: pointer;
+}
+
+.services__card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+   
+</style>
+
+<body style="background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100% );">
+
+
+</div><div class="services" id="services">
+    <h1>Successfull</h1>
+    <h1>Final Output </h1>
+    <div class="services__wrapper">
+      <div class="services__card">
+       
+        <h2>Welcome to the result page</h2>
+      </div>
+      <div class="services__card">
+       
+        <h2>Our final successfull prediction of the Audio Class is ->>>> </h2>
+      </div>
+     <div class="services__card">
+        <h2>{{prediction_class}}</h2> 
+      </div>
+    </div>
+  </div>
+
+</div><div class="services" id="services">
+    <h1>Thank You </h1>
+    <h1><a href="http://127.0.0.1:8000/"> Home </a></h1>
+</div>
+    
+
+</body>
+
+</html>
